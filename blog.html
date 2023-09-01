@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHero Tube | Blog</title>
+    <!-- daisyUi link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontAwesome link -->
+    <script
+      src="https://kit.fontawesome.com/40da276710.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="container mx-auto px-4 md:px-0">
+    <header>
+      <div
+        class="navbar flex-wrap gap-4 justify-center sm:justify-between bg-base-100"
+      >
+        <div class="sm:navbar-start">
+          <a href="/" class="btn btn-ghost normal-case text-xl">
+            <img src="./assets/Logo.png" alt="logo image" class="w-28" />
+          </a>
+        </div>
+        <div class="sm:navbar-center">
+          <h1 class="text-lg font-medium text-gray-300">Interview Questions</h1>
+        </div>
+      </div>
+    </header>
+    <hr class="mx-4 my-4" />
+    <section
+      class="max-w-4xl mx-auto mt-10"
+    >
+      <div class="collapse collapse-plus bg-base-300">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          Discuss the scope of var, let, and const
+        </div>
+        <div class="collapse-content">
+          <div class="p-8">
+            <div>
+              <h2 class="text-lg font-semibold">var</h2>
+              <ul class="list-disc">
+                <li>
+                  Function scope: Variables are accessible throughout the entire
+                  function in which they are declared.
+                </li>
+                <li>
+                  Hoisting: Variables are hoisted to the top of their containing
+                  function or script, but only the declaration is hoisted, not
+                  the initialization.
+                </li>
+              </ul>
+            </div>
+            <div class="my-4">
+              <h2 class="text-lg font-semibold">let</h2>
+              <ul class="list-disc">
+                <li>
+                  Block scope: Variables are only accessible within the block
+                  (e.g., if, for) in which they are defined.
+                </li>
+                <li>
+                  Hoisting: Variables are hoisted but have a "temporal dead
+                  zone" where they cannot be accessed before their declaration.
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <h2 class="text-lg font-semibold">const</h2>
+              <ul class="list-disc">
+                <li>
+                  Block scope: Variables are only accessible within the block
+                  (e.g., if, for) in which they are defined.
+                </li>
+                <li>
+                  Immutability: Variables declared with const cannot be
+                  reassigned new values, but for objects and arrays, their
+                  properties or elements can be modified.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-300 my-1">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          Tell us the use cases of null and undefined
+        </div>
+        <div class="collapse-content">
+          <div>
+            <div>
+              <h2 class="text-lg font-medium">null</h2>
+              <p>
+                null is a value that represents the explicit absence of any
+                object value or a value that is intentionally missing or
+                unknown. It is often used to indicate that a variable or
+                property has been deliberately set to "no value."
+              </p>
+            </div>
+            <div class="mt-4">
+              <h2 class="text-lg font-medium">undefined</h2>
+              <p>
+                undefined is the default value of uninitialized variables and
+                function parameters in JavaScript. It indicates that a variable
+                or property has been declared but has not yet been assigned any
+                value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-300">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What do you mean by REST API?
+        </div>
+        <div class="collapse-content">
+          <p>
+            REST API, which stands for Representational State Transfer
+            Application Programming Interface, is a set of architectural
+            constraints and principles for designing networked applications. It
+            is an approach to building web services that are scalable,
+            stateless, and easy to understand and use.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHero Tube</title>
+    <!-- daisyUi link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      :root {
+        --btnBgColor: #ff1f3d;
+      }
+    </style>
+  </head>
+  <body class="container mx-auto">
+    <header class="sm:sticky top-0 z-50">
+      <div
+        class="navbar flex-wrap gap-4 justify-center sm:justify-between bg-base-100"
+      >
+        <div class="sm:navbar-start">
+          <a class="btn btn-ghost normal-case text-xl">
+            <img src="./assets/Logo.png" alt="logo image" class="w-28" />
+          </a>
+        </div>
+        <div class="sm:navbar-center">
+          <button
+            id="sort-by-views"
+            class="btn btn-sm sm:btn-md font-medium normal-case"
+          >
+            Sort by view
+          </button>
+        </div>
+        <div class="sm:navbar-end">
+          <a
+            onclick="handleBlog()"
+            class="btn btn-sm sm:btn-md text-white hover:text-gray-800 font-medium bg-[var(--btnBgColor)] normal-case"
+            >Blog</a
+          >
+        </div>
+      </div>
+    </header>
+    <hr class="mx-4 my-4" />
+    <section class="mx-4">
+      <div
+        id="category"
+        class="flex flex-wrap items-center justify-center gap-5 w-fit mx-auto my-5"
+      ></div>
+      <div
+        id="video-container"
+        class="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      ></div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
